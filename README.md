@@ -7,5 +7,5 @@ Create a package for Mac OSX:
 
 ```
 npm install electron-packager -g
-electron-packager . DevDocs --platform=darwin --arch=x64 --icon=apple-icon-72.icns
+electron-packager . DevDocs --platform=darwin --arch=x64 --icon=icon.icns
 ```
