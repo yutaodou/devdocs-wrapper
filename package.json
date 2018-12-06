@@ -1,18 +1,21 @@
 {
-  "name": "DevDocs",
-  "version": "1.0.0",
-  "description": "A minimal wrapper for DevDocs",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron main.js",
-    "package-osx": "node_modules/.bin/electron-packager . DevDocs --platform=darwin --arch=x64 --icon=icon.icns",
-    "package-x86": "node_modules/.bin/electron-packager . DevDocs --platform=win32 --arch=x64 --icon=icon.icns",
-    "package-x64": "node_modules/.bin/electron-packager . DevDocs --platform=win32 --arch=ia32 --icon=icon.icns"
-  },
-  "author": "GitHub",
-  "license": "CC0-1.0",
-  "devDependencies": {
-    "electron-packager": "^8.6.0",
-    "electron-prebuilt": "^0.36.0"
-  }
+    "name": "DevDocs",
+    "version": "1.0.0",
+    "description": "A minimal wrapper for DevDocs",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron main.js",
+        "package-osx": "npm install && node_modules/.bin/electron-packager . DevDocs --platform=darwin --arch=x64 --icon=icon.icns --overwrite",
+        "package-x86": "npm install && node_modules/.bin/electron-packager . DevDocs --platform=win32 --arch=x64 --icon=icon.icns --overwrite",
+        "package-x64": "npm install && node_modules/.bin/electron-packager . DevDocs --platform=win32 --arch=ia32 --icon=icon.icns --overwrite"
+    },
+    "author": "GitHub",
+    "license": "CC0-1.0",
+    "devDependencies": {
+        "electron-packager": "^13.0.0",
+        "electron-prebuilt": "^1.4.13"
+    },
+    "dependencies": {
+        "electron-builder": "^20.38.2"
+    }
 }
